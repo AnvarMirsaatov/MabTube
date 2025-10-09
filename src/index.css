@@ -46,3 +46,14 @@
 .category-btn:hover span {
   color: white !important;
 }
+
+.video_card_wrappaer {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(20rem, 558.974vw - 88.301rem, 156.25rem))
+  );
+  gap: 2px;
+  justify-content: center;
+  align-items: stretch;
+}

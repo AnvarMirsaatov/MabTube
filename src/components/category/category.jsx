@@ -4,8 +4,13 @@ import { COLORS } from '../../constants/colors'
 
 const Category = ({ selectedCategoryHandler, activeCategory }) => {
   return (
-    <Stack direction={'row'} sx={{ overflowX: 'scroll',
-      }}>
+    <Stack
+      direction={'row'}
+      width={`xl:'1440px', lg:1140px, md:768px, sm:425px , xs:320px `}
+      sx={{
+        overflowX: 'scroll'
+      }}
+    >
       {CategoryData.map(category => (
         <button
           onClick={() => selectedCategoryHandler(category.name)}

@@ -24,8 +24,6 @@ const Search = () => {
     getData()
   }, [id])
 
-  console.log('Search', videosData)
-
   return (
     <Stack>
       <Box>

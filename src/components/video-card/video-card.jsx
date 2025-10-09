@@ -15,7 +15,7 @@ const VideoCard = ({ video }) => {
     <>
       <Card
         sx={{
-          width: '320px',
+          width: '100%',
           boxShadow: 'none',
           borderRadius: 0
         }}
@@ -24,7 +24,7 @@ const VideoCard = ({ video }) => {
           <CardMedia
             image={video?.snippet?.thumbnails?.high?.url}
             alt={video?.snipped?.title}
-            sx={{ width: '320px', height: '180px' }}
+            sx={{ width: '100%', height: '180px' }}
           />
           <CardContent>
             <Typography variant='subtitle1'>

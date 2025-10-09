@@ -3,10 +3,9 @@ import { CategoryData } from '../../context'
 import { COLORS } from '../../constants/colors'
 
 const Category = ({ selectedCategoryHandler, activeCategory }) => {
-
-
   return (
-    <Stack direction={'row'} sx={{ overflowX: 'scroll' }}>
+    <Stack direction={'row'} sx={{ overflowX: 'scroll',
+      }}>
       {CategoryData.map(category => (
         <button
           onClick={() => selectedCategoryHandler(category.name)}
@@ -14,7 +13,8 @@ const Category = ({ selectedCategoryHandler, activeCategory }) => {
           className='category-btn'
           style={{
             borderRadius: 0,
-            background: category.name === activeCategory && COLORS.error.youtube,
+            background:
+              category.name === activeCategory && COLORS.error.youtube,
             color: category.name === activeCategory && COLORS.error.contrastText
           }}
         >

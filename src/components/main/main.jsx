@@ -24,8 +24,6 @@ export default function Main () {
     getData()
   }, [activeCategory])
 
-  console.log('Main', videosData)
-
   const selectedCategoryHandler = name => setActiveCategory(name)
   return (
     <Stack>

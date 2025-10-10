@@ -1,10 +1,8 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { COLORS } from '../../constants/colors'
 import { Videos } from '..'
 
 const ContentWrapper = ({ videosData, activeCategory }) => {
-  console.log(videosData)
-
   return (
     <>
       <Box>
